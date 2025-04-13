@@ -11,7 +11,7 @@
     "setup:strapi": "cd strapi && yarn && node --loader ts-node/esm ../scripts/copy-env.mts ./",
     "setup": "yarn install && yarn setup:next && yarn setup:strapi",
     "build:strapi": "cd strapi && yarn build",
-    "start": "yarn build:strapi && cd strapi && yarn start"
+    "start": "yarn build:strapi && cd strapi && yarn start",
     "dev": "yarn concurrently \"cd strapi && yarn develop\" \"npx wait-on http://localhost:1337 && cd next && yarn dev\"",
     "seed": "cd strapi && yarn strapi import -f ./data/export_20250116105447.tar.gz --no-prompt",
     "export": "cd strapi && yarn strapi export --no-encrypt -f ./data/export_20250116105447",
