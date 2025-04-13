@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Next.js Launchpad Example powered by Strapi",
   "type": "module",
+  "license": "MIT",
   "scripts": {
     "next": "yarn dev --prefix ../next/",
     "strapi": "yarn dev --prefix ../strapi/",
